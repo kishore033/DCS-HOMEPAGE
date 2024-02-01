@@ -107,11 +107,18 @@
             bottom: 0;
             width: 100%;
         }
-        .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+   
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
          @media (max-width : 680px){
             
@@ -221,11 +228,19 @@
             width: 100%;
             
         }
-             .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+            
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 }
              
     </style>
